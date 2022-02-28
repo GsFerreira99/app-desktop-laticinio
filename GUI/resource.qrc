@@ -1,0 +1,5 @@
+<RCC>
+  <qresource prefix="newPrefix">
+    <file>rancho.png</file>
+  </qresource>
+</RCC>
