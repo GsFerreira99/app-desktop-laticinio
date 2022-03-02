@@ -1,5 +1,6 @@
 <RCC>
   <qresource prefix="newPrefix">
     <file>rancho.png</file>
+    <file>icon_pesquisa.png</file>
   </qresource>
 </RCC>

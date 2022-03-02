@@ -1,5 +1,5 @@
 from PyQt5.QtWidgets import QMainWindow, QApplication
-from GUI.ui_menu_principal import Ui_MainWindow
+from Interface.principal.ui_menu_principal import Ui_MainWindow
 from Interface.principal.navegacao import Navegacao
 import sys
 
@@ -7,6 +7,7 @@ class MenuPrincipal(QMainWindow, Ui_MainWindow):
     def __init__(self, parent=None) -> None:
         super().__init__(parent)
         super().setupUi(self)
+        Navegacao.definir_telas(self)
 
         self.btn_home.clicked.connect(lambda: Navegacao.navegar(self, 0))
         self.btn_vendas.clicked.connect(lambda: Navegacao.navegar(self, 1))

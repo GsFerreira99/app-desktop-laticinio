@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 ################################################################################
-## Form generated from reading UI file 'menu_principalqsUiwZ.ui'
+## Form generated from reading UI file 'menu_principalTiCEkd.ui'
 ##
 ## Created by: Qt User Interface Compiler version 5.15.2
 ##
@@ -12,7 +12,7 @@ from PyQt5.QtCore import *
 from PyQt5.QtGui import *
 from PyQt5.QtWidgets import *
 
-import GUI.resource_rc
+import media.resource_rc
 
 class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
@@ -25,113 +25,6 @@ class Ui_MainWindow(object):
         self.gridLayout_4.setObjectName(u"gridLayout_4")
         self.gridLayout_4.setHorizontalSpacing(0)
         self.gridLayout_4.setContentsMargins(0, 0, 0, 0)
-        self.Conteudo = QWidget(self.centralwidget)
-        self.Conteudo.setObjectName(u"Conteudo")
-        self.Conteudo.setStyleSheet(u"background-color: rgb(130, 130, 130)")
-        self.gridLayout_2 = QGridLayout(self.Conteudo)
-        self.gridLayout_2.setSpacing(6)
-        self.gridLayout_2.setObjectName(u"gridLayout_2")
-        self.gridLayout_2.setContentsMargins(15, 15, 15, 15)
-        self.titulo = QLabel(self.Conteudo)
-        self.titulo.setObjectName(u"titulo")
-        self.titulo.setMinimumSize(QSize(0, 50))
-        self.titulo.setMaximumSize(QSize(16777215, 50))
-        self.titulo.setStyleSheet(u"font: 20pt \"Segoe UI Variable Display Semib\";\n"
-"background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(0, 0, 0, 0), stop:1 rgba(255, 255, 255, 0));\n"
-"color: rgb(248, 248, 248)")
-        self.titulo.setAlignment(Qt.AlignCenter)
-
-        self.gridLayout_2.addWidget(self.titulo, 0, 0, 1, 1)
-
-        self.stackedWidget = QStackedWidget(self.Conteudo)
-        self.stackedWidget.setObjectName(u"stackedWidget")
-        self.stackedWidget.setStyleSheet(u"background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(0, 0, 0, 0), stop:1 rgba(255, 255, 255, 0));")
-        self.Home = QWidget()
-        self.Home.setObjectName(u"Home")
-        self.gridLayout_5 = QGridLayout(self.Home)
-        self.gridLayout_5.setObjectName(u"gridLayout_5")
-        self.titulo_2 = QLabel(self.Home)
-        self.titulo_2.setObjectName(u"titulo_2")
-        self.titulo_2.setMinimumSize(QSize(0, 50))
-        self.titulo_2.setMaximumSize(QSize(16777215, 50))
-        self.titulo_2.setStyleSheet(u"font: 20pt \"Segoe UI Variable Display Semib\";\n"
-"background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(0, 0, 0, 0), stop:1 rgba(255, 255, 255, 0));\n"
-"color: rgb(248, 248, 248)")
-        self.titulo_2.setAlignment(Qt.AlignCenter)
-
-        self.gridLayout_5.addWidget(self.titulo_2, 0, 0, 1, 1)
-
-        self.stackedWidget.addWidget(self.Home)
-        self.Vendas = QWidget()
-        self.Vendas.setObjectName(u"Vendas")
-        self.gridLayout_6 = QGridLayout(self.Vendas)
-        self.gridLayout_6.setObjectName(u"gridLayout_6")
-        self.titulo_3 = QLabel(self.Vendas)
-        self.titulo_3.setObjectName(u"titulo_3")
-        self.titulo_3.setMinimumSize(QSize(0, 50))
-        self.titulo_3.setMaximumSize(QSize(16777215, 50))
-        self.titulo_3.setStyleSheet(u"font: 20pt \"Segoe UI Variable Display Semib\";\n"
-"background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(0, 0, 0, 0), stop:1 rgba(255, 255, 255, 0));\n"
-"color: rgb(248, 248, 248)")
-        self.titulo_3.setAlignment(Qt.AlignCenter)
-
-        self.gridLayout_6.addWidget(self.titulo_3, 0, 0, 1, 1)
-
-        self.stackedWidget.addWidget(self.Vendas)
-        self.Clientes = QWidget()
-        self.Clientes.setObjectName(u"Clientes")
-        self.gridLayout_7 = QGridLayout(self.Clientes)
-        self.gridLayout_7.setObjectName(u"gridLayout_7")
-        self.titulo_4 = QLabel(self.Clientes)
-        self.titulo_4.setObjectName(u"titulo_4")
-        self.titulo_4.setMinimumSize(QSize(0, 50))
-        self.titulo_4.setMaximumSize(QSize(16777215, 50))
-        self.titulo_4.setStyleSheet(u"font: 20pt \"Segoe UI Variable Display Semib\";\n"
-"background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(0, 0, 0, 0), stop:1 rgba(255, 255, 255, 0));\n"
-"color: rgb(248, 248, 248)")
-        self.titulo_4.setAlignment(Qt.AlignCenter)
-
-        self.gridLayout_7.addWidget(self.titulo_4, 0, 0, 1, 1)
-
-        self.stackedWidget.addWidget(self.Clientes)
-        self.Financeiro = QWidget()
-        self.Financeiro.setObjectName(u"Financeiro")
-        self.gridLayout_8 = QGridLayout(self.Financeiro)
-        self.gridLayout_8.setObjectName(u"gridLayout_8")
-        self.titulo_5 = QLabel(self.Financeiro)
-        self.titulo_5.setObjectName(u"titulo_5")
-        self.titulo_5.setMinimumSize(QSize(0, 50))
-        self.titulo_5.setMaximumSize(QSize(16777215, 50))
-        self.titulo_5.setStyleSheet(u"font: 20pt \"Segoe UI Variable Display Semib\";\n"
-"background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(0, 0, 0, 0), stop:1 rgba(255, 255, 255, 0));\n"
-"color: rgb(248, 248, 248)")
-        self.titulo_5.setAlignment(Qt.AlignCenter)
-
-        self.gridLayout_8.addWidget(self.titulo_5, 0, 0, 1, 1)
-
-        self.stackedWidget.addWidget(self.Financeiro)
-        self.Configuracoes = QWidget()
-        self.Configuracoes.setObjectName(u"Configuracoes")
-        self.gridLayout_3 = QGridLayout(self.Configuracoes)
-        self.gridLayout_3.setObjectName(u"gridLayout_3")
-        self.Home_2 = QLabel(self.Configuracoes)
-        self.Home_2.setObjectName(u"Home_2")
-        self.Home_2.setMinimumSize(QSize(0, 50))
-        self.Home_2.setMaximumSize(QSize(16777215, 50))
-        self.Home_2.setStyleSheet(u"font: 20pt \"Segoe UI Variable Display Semib\";\n"
-"background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(0, 0, 0, 0), stop:1 rgba(255, 255, 255, 0));\n"
-"color: rgb(248, 248, 248)")
-        self.Home_2.setAlignment(Qt.AlignCenter)
-
-        self.gridLayout_3.addWidget(self.Home_2, 0, 0, 1, 1)
-
-        self.stackedWidget.addWidget(self.Configuracoes)
-
-        self.gridLayout_2.addWidget(self.stackedWidget, 1, 0, 1, 1)
-
-
-        self.gridLayout_4.addWidget(self.Conteudo, 0, 1, 1, 1)
-
         self.MenuLateral = QWidget(self.centralwidget)
         self.MenuLateral.setObjectName(u"MenuLateral")
         self.MenuLateral.setMinimumSize(QSize(160, 0))
@@ -253,6 +146,48 @@ class Ui_MainWindow(object):
 
         self.gridLayout_4.addWidget(self.MenuLateral, 0, 0, 1, 1)
 
+        self.Conteudo = QWidget(self.centralwidget)
+        self.Conteudo.setObjectName(u"Conteudo")
+        self.Conteudo.setStyleSheet(u"background-color: rgb(130, 130, 130)")
+        self.gridLayout_2 = QGridLayout(self.Conteudo)
+        self.gridLayout_2.setSpacing(6)
+        self.gridLayout_2.setObjectName(u"gridLayout_2")
+        self.gridLayout_2.setContentsMargins(15, 15, 15, 15)
+        self.titulo = QLabel(self.Conteudo)
+        self.titulo.setObjectName(u"titulo")
+        self.titulo.setMinimumSize(QSize(0, 50))
+        self.titulo.setMaximumSize(QSize(16777215, 50))
+        self.titulo.setStyleSheet(u"font: 20pt \"Segoe UI Variable Display Semib\";\n"
+"background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(0, 0, 0, 0), stop:1 rgba(255, 255, 255, 0));\n"
+"color: rgb(248, 248, 248)")
+        self.titulo.setAlignment(Qt.AlignCenter)
+
+        self.gridLayout_2.addWidget(self.titulo, 0, 0, 1, 1)
+
+        self.stackedWidget = QStackedWidget(self.Conteudo)
+        self.stackedWidget.setObjectName(u"stackedWidget")
+        self.stackedWidget.setStyleSheet(u"background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(0, 0, 0, 0), stop:1 rgba(255, 255, 255, 0));")
+        self.Home = QWidget()
+        self.Home.setObjectName(u"Home")
+        self.stackedWidget.addWidget(self.Home)
+        self.Vendas = QWidget()
+        self.Vendas.setObjectName(u"Vendas")
+        self.stackedWidget.addWidget(self.Vendas)
+        self.Cadastros = QWidget()
+        self.Cadastros.setObjectName(u"Cadastros")
+        self.stackedWidget.addWidget(self.Cadastros)
+        self.Financeiro = QWidget()
+        self.Financeiro.setObjectName(u"Financeiro")
+        self.stackedWidget.addWidget(self.Financeiro)
+        self.Configuracoes = QWidget()
+        self.Configuracoes.setObjectName(u"Configuracoes")
+        self.stackedWidget.addWidget(self.Configuracoes)
+
+        self.gridLayout_2.addWidget(self.stackedWidget, 1, 0, 1, 1)
+
+
+        self.gridLayout_4.addWidget(self.Conteudo, 0, 1, 1, 1)
+
         MainWindow.setCentralWidget(self.centralwidget)
 
         self.retranslateUi(MainWindow)
@@ -265,17 +200,12 @@ class Ui_MainWindow(object):
 
     def retranslateUi(self, MainWindow):
         MainWindow.setWindowTitle(QCoreApplication.translate("MainWindow", u"MainWindow", None))
-        self.titulo.setText(QCoreApplication.translate("MainWindow", u"TITULO DA P\u00c1GINA", None))
-        self.titulo_2.setText(QCoreApplication.translate("MainWindow", u"Home", None))
-        self.titulo_3.setText(QCoreApplication.translate("MainWindow", u"Vendas", None))
-        self.titulo_4.setText(QCoreApplication.translate("MainWindow", u"Clientes", None))
-        self.titulo_5.setText(QCoreApplication.translate("MainWindow", u"Financeiro", None))
-        self.Home_2.setText(QCoreApplication.translate("MainWindow", u"Home", None))
         self.btn_logo.setText("")
         self.btn_home.setText(QCoreApplication.translate("MainWindow", u"Home", None))
         self.btn_vendas.setText(QCoreApplication.translate("MainWindow", u"Vendas", None))
-        self.btn_clientes.setText(QCoreApplication.translate("MainWindow", u"Clientes", None))
+        self.btn_clientes.setText(QCoreApplication.translate("MainWindow", u"Cadastro", None))
         self.btn_financeiro.setText(QCoreApplication.translate("MainWindow", u"Financeiro", None))
         self.configuracoes.setText(QCoreApplication.translate("MainWindow", u"Configura\u00e7\u00e3o", None))
+        self.titulo.setText(QCoreApplication.translate("MainWindow", u"TITULO DA P\u00c1GINA", None))
     # retranslateUi
 
