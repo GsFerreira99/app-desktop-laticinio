@@ -4,3 +4,8 @@ __pycache__/
 .vscode
 venv/
 venv
+build/
+build
+dist/
+dist
+setup.py

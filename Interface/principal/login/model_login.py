@@ -6,7 +6,7 @@ class LoginModel:
     def __init__(self):
         self.usuario = None
         self.senha = None
-        self.api = Api('http://127.0.0.1:8000/')
+        self.api = Api('https://rancho-alere.herokuapp.com/')
 
     def definir_credenciais(self, usuario, senha):
         self.usuario = usuario

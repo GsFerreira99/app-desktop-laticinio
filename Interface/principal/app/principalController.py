@@ -1,3 +1,4 @@
+from Interface.api.Api import Api
 from Interface.principal.home.homeController import HomeController
 from .principalView import PrincipalView
 from .principalModel import PrincipalModel
@@ -14,6 +15,8 @@ class PrincipalController:
         self.view = PrincipalView()
         self.model = PrincipalModel()
 
+        self.api = Api('https://rancho-alere.herokuapp.com/api/')
+
         #CONTROLLERS
         self.homeController = HomeController(self)  
         self.recebimentoController = RecebimentoController(self)
@@ -29,7 +32,11 @@ class PrincipalController:
 
     def definir_user(self, user):
         self.user = User(user['id'], user['username'], user['password'], user['first_name'], user['last_name'], user['groups'])
+        self.configurar_api()
         self.atualizar_user()
+
+    def configurar_api(self):
+        self.api.definir_auth(usuario=self.user.get_usuario, senha=self.user.get_senha)
 
     def atualizar_user(self):
         self.view.label_3.setText(self.user.get_name)
@@ -37,24 +44,26 @@ class PrincipalController:
 
     def definirTelas(self):
         self.view.navWidget.insertWidget(0, self.homeController.view)
-        self.recebimentoController = self.view.navWidget.insertWidget(1, self.recebimentoController.view)
+        self.view.navWidget.insertWidget(1, self.recebimentoController.view)
 
     def navegar(self, index):
         nav = {
-            0 : {'titulo': 'Recebimento Leite', 'funcao' : self.home},
-            1 : {'titulo': 'Recebimento Leite'}
+            0 : {'titulo': 'Home',  'funcao' : self.home},
+            1 : {'titulo': 'Recebimento Leite',  'funcao' : self.recebimento}
         }
 
         self.view.navWidget.setCurrentIndex(index)
         self.view.editar_titulo(nav[index]['titulo'])
+        func = nav[index]['funcao']
+        func()
 
     def toogleMenuLeft(self):
         toggle_width(self, self.view.menu_lateral, 200, True)
 
     def recebimento(self):
-        self.view.editar_titulo('Recebimento Leite')
-        self.view.navWidget.setCurrentIndex(0)
+        self.recebimentoController.preencher_campo_fornecedor()
+        self.recebimentoController.preencher_campo_data()
+        self.recebimentoController.view.aviso.exibicao(False)
 
     def home(self):
-        self.view.editar_titulo('Home')
-        self.view.navWidget.setCurrentIndex(1)
+        pass

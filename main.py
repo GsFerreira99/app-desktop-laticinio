@@ -9,12 +9,13 @@ class App:
     def __init__(self):
         self.principalController = PrincipalController()
         self.loginController = LoginController(self.principalController)
-        #self.loginController.view.show()
+        self.loginController.view.show()
 
         
 
 root = QApplication(sys.argv)
 app = App()
+
 
 
 sys.exit(root.exec_())

@@ -8,7 +8,7 @@ class LoginController:
 
         self.redirecionar = tela
         
-        self.direto()
+        #self.direto()
 
         self.view.btn_entrar.clicked.connect(self.efetuar_login)
         self.view.btn_entrar.setAutoDefault(True)
@@ -28,7 +28,6 @@ class LoginController:
         self.view.close()
         self.redirecionar.definir_user(self.auth[1][0])
         self.redirecionar.view.show()
-
 
     def efetuar_login(self):
         self.dados_login()

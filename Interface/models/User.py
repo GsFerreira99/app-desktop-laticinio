@@ -26,5 +26,13 @@ class User:
         return self._groups
 
     @property
+    def get_usuario(self):
+        return self._username
+    
+    @property
+    def get_senha(self):
+        return self._password
+
+    @property
     def get_name(self):
         return f"{self._first_name} {self._last_name}"

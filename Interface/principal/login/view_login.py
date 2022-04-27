@@ -1,5 +1,6 @@
 from Interface.principal.login.ui_login import Ui_Form
 from PyQt5.QtWidgets import QFrame
+from PyQt5.QtGui import QIcon
 
 
 class LoginView(Ui_Form, QFrame):
@@ -7,6 +8,8 @@ class LoginView(Ui_Form, QFrame):
     def __init__(self, parent=None):
         super().__init__(parent)
         super().setupUi(self)
+        self.setWindowIcon(QIcon('logo.ico'))
+        self.setWindowTitle('Login')
 
         self.label_msg.setMaximumHeight(0)
         
