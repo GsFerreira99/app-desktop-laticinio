@@ -1,6 +1,9 @@
 <RCC>
   <qresource prefix="newPrefix">
-    <file>rancho.png</file>
-    <file>icon_pesquisa.png</file>
+    <file>Logo-Limpa.png</file>
+    <file>sino.png</file>
+    <file>user.png</file>
+    <file>toggle_button.png</file>
+    <file>drop-down.png</file>
   </qresource>
 </RCC>

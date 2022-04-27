@@ -1,24 +1,20 @@
-from PyQt5.QtWidgets import QMainWindow, QApplication
-from Interface.principal.ui_menu_principal import Ui_MainWindow
-from Interface.principal.navegacao import Navegacao
+from PyQt5.QtWidgets import QApplication
 import sys
 
-class MenuPrincipal(QMainWindow, Ui_MainWindow):
-    def __init__(self, parent=None) -> None:
-        super().__init__(parent)
-        super().setupUi(self)
-        Navegacao.definir_telas(self)
+#Controlers
+from Interface.principal.login.controller_login import LoginController
+from Interface.principal.app.principalController import PrincipalController
 
-        self.btn_home.clicked.connect(lambda: Navegacao.navegar(self, 0))
-        self.btn_vendas.clicked.connect(lambda: Navegacao.navegar(self, 1))
-        self.btn_clientes.clicked.connect(lambda: Navegacao.navegar(self, 2))
-        self.btn_financeiro.clicked.connect(lambda: Navegacao.navegar(self, 3))
-        self.configuracoes.clicked.connect(lambda: Navegacao.navegar(self, 4))
+class App:
+    def __init__(self):
+        self.principalController = PrincipalController()
+        self.loginController = LoginController(self.principalController)
+        #self.loginController.view.show()
 
-
+        
 
 root = QApplication(sys.argv)
-app = MenuPrincipal()
-app.showMaximized()
+app = App()
+
 
 sys.exit(root.exec_())
